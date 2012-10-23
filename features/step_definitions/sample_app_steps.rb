@@ -1,7 +1,11 @@
 # -*- coding: utf-8 -*-
 
-もし /^ページを表示する$/ do
+もし /^トップページを表示する$/ do
   visit '/'
+end
+
+もし /^contactページを表示する$/ do
+  visit '/contact'
 end
 
 ならば /^"(.*?)"と表示されていること$/ do |text|
