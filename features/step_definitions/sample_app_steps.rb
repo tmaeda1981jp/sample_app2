@@ -1,11 +1,7 @@
 # -*- coding: utf-8 -*-
 
-もし /^トップページを表示する$/ do
-  visit '/'
-end
-
-もし /^contactページを表示する$/ do
-  visit '/contact'
+もし /^(.*?)を表示する$/ do |name|
+  visit name_to_path(name)
 end
 
 ならば /^"(.*?)"と表示されていること$/ do |text|
