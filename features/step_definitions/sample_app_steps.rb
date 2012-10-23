@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-もし /^ページを表示する$/ do
-  visit '/'
+もし /^(.*?)を表示する$/ do |name|
+  visit name_to_path(name)
 end
 
 ならば /^"(.*?)"と表示されていること$/ do |text|
