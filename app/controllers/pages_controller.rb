@@ -5,5 +5,6 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @title = "お問い合わせ"
   end
 end
